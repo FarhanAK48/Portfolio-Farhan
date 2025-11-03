@@ -113,7 +113,57 @@ educationList = [
     details: 'Specialized in Science with Mathematics. '
   }
 ];
-
+experiences = [
+    {
+      role: 'Software Engineer',
+      company: 'Boltech Solutions',
+      location: 'Lahore, Pakistan, On-site Full-time',
+      duration: 'Aug 2022 - Present',
+      logo: '../../../assets/boltech_solutions_logo.jpeg',
+      bulletPoints: [
+        "Contributed significantly to various projects leveraging JavaScript and modern frameworks.",
+        'Collaborated with cross-functional teams to design and implement high-quality software.',
+        'Optimized performance and stayed ahead of industry trends.',
+        'Solved complex problems and adapted to evolving technologies.'
+  
+      ],
+      skills: [
+        'Angular',
+        'Ionic',
+        'Node.js',
+        'Express',
+        'TypeScript',
+        'Tailwind CSS',
+        'Bootstrap',
+        'Git',
+        'Sql',
+        'PostgreSQL'
+      ]
+    },
+    {
+      role: 'Software Engineer',
+      company: 'One Machine Software',
+      location: 'Lahore, Pakistan, On-site Full-time',
+      duration: 'July 2025 - Present',
+      logo: '../../../assets/one_machine_software_logo.jpg',
+      bulletPoints: [
+        'Developing scalable web applications using Angular, React , Node.js  and Tooljet.',
+        'Collaborating on API design and system architecture improvements.',
+        'Ensuring code quality and maintaining reusable components.'
+      ],
+      skills: [
+        'Angular',
+        'ReactJs',
+        'Tooljet',
+        'SQL',
+        'TypeScript',
+        'Bootstrap',
+        'Git',
+        'Agile'
+      ]
+    }
+  ];
+  activeCardIndex = -1;
 activeIndex: number | null = null;
 displayedText = '';
 currentRoleIndex = 0;
@@ -139,9 +189,11 @@ ngOnInit() {
   this.typeEffect();
 }
 toggle(index: number): void {
-  this.activeIndex = this.activeIndex === index ? null : index;
+  this.activeIndex = this.activeIndex === index ? -1 : index;
 }
-
+  toggleCard(index: number) {
+    this.activeCardIndex = this.activeCardIndex === index ? -1 : index; // toggle same, or open new
+  }
 typeEffect() {
   const fullText = this.roles[this.currentRoleIndex];
   this.displayedText = this.isDeleting
