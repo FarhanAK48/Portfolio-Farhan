@@ -73,6 +73,12 @@ export class ProjectsComponent implements OnInit {
   // ];
   project = [
     {
+      title: 'Zero Balance DataPrep',
+      description:
+        'This is a part of application in which authenticarion will done by parent app and select patient name and also upload patient files and on data came from backend and we show that record in table.',
+      img: '../../../assets/dataprep.png'
+    },
+    {
       title: 'Thurrock Training Consultancy',
       description:
         'A Study Abroad app helping students find study visas and plan their future. Built with Angular and Laravel, featuring authentication, responsive UI, core modules, and smooth API integration.',
@@ -194,7 +200,35 @@ export class ProjectsComponent implements OnInit {
     { title: 'Get Inspired', detail: 'Look at creative work...', color: 'border-purple-500' }
   ];
 
+
   projectDetails: any = [
+     {
+      image: '../../../assets/dataprep.png',
+      projectName: 'Zero Balance DataPrep',
+      company: 'One Machine Software ',
+      start: 'Aug 2025',
+      end: 'Oct 2025',
+      about: 'This is a part of application in which authenticarion will done by parent app and select patient name and also upload patient files and on data came from backend and we show that record in table.',
+      techStack: [
+        'React',
+        'Redux',        
+        'Tailwind Css',
+        'Node.js',        
+        'MySQL',
+        'Git',
+        'Github',
+
+      ],
+      role: 'Full-Stack Developer',
+      features: [
+        'Authentication with parent app parameters',        
+        'Design Entire Application',
+        'Select and Check valid files are selected or not',
+        'Start polling when files are processing req gone after 2 seconds',
+        'When process completed show data in table',
+        'Responsive design for all device types'
+      ]
+    },
     {
       image: '../../../assets/TTC_-removebg-preview.png',
       projectName: 'Thurrock Training Consultancy',

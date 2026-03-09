@@ -15,7 +15,22 @@ export class JourneyComponent implements OnInit {
 applyAnimation = false;
 timelineItems = [
   {
-    date: '2023 – Present',
+    date: 'July 2025 – Present',
+    title: 'Software Engineer',
+    company: 'One Machine Software',
+    location: 'Lahore, Pakistan',
+    type: 'On-site',
+    status: 'Current',
+    contributions: [
+      'Specialized in frontend for 3+ production apps',
+      'Contributed to full-stack (APIs, DB design)',
+      'Optimized UX performance by 35%',
+    ],
+    techStack: ['Angular', 'React js', 'Node.js','Tooljet'],
+    image: '../../../assets/Zakriya.jpeg'
+  },
+  {
+    date: 'Jan 2023 – June 2025',
     title: 'Software Engineer',
     company: 'BolTech Solutions',
     location: 'Lahore, Pakistan',
